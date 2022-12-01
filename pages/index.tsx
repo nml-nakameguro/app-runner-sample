@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const myEnv = process.env.myEnv;
+  console.log("!!!!!!!", myEnv);
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          環境変数→ <a href="https://nextjs.org">{myEnv}</a>
         </h1>
 
         <p className={styles.description}>
