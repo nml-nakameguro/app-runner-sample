@@ -3,7 +3,7 @@ runtime: nodejs16
 build:
   commands:
     build:
-      - yarn --production
+      - yarn install
       - yarn build
 run:
   command: yarn start
