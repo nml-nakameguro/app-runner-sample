@@ -4,14 +4,9 @@ build:
   commands:
     build:
       - yarn install
+      - echo "TEST_MY_ENV=123" >> .env
       - yarn build
-  env:
-    - name: TEST_MY_ENV
-      value: "hello_world22"
 run:
   command: yarn start
   network:
     port: 3000
-  env:
-    - name: TEST_MY_ENV
-      value: "hello_world33"
